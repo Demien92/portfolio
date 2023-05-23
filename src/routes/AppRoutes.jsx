@@ -1,7 +1,6 @@
 import React from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom';
-import {rootMainPath, rootAuthPath} from './paths';
-import AuthContainer from '../containers/AuthContainer';
+import {rootMainPath} from './paths';
 import MainContainer from '../containers/MainContainer';
 
 const AppRoutes = () => {
@@ -12,7 +11,6 @@ const AppRoutes = () => {
         exact
         render={() => (localStorage.token ? <Redirect to={rootMainPath} /> : <Redirect to={rootAuthPath} />)}
       />
-      <Route path={rootAuthPath} component={AuthContainer} />
       <Route path={rootMainPath} component={MainContainer} />
     </Switch>
   );

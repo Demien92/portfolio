@@ -23,15 +23,7 @@ import {
   TransitionedBlockExample
 } from '../features/Examples';
 
-export const rootAuthPath = '/auth';
 export const rootMainPath = '/main';
-
-export const authPath = {
-  signIn: {path: `${rootAuthPath}/sign-in`, name: 'Sign In'},
-  signUp: {path: `${rootAuthPath}/sign-up`, name: 'Sign up'},
-  passRecovery: {path: `${rootAuthPath}/password-recovery`, name: 'Password recovery'},
-  passConfirm: {path: `${rootAuthPath}/password-confirm`, name: 'Reset password'}
-};
 
 export const mainPath = {
   dashboard: {path: `${rootMainPath}/dashboard`, name: 'Dashboard'},

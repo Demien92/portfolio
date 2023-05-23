@@ -1,12 +1,11 @@
 import React from 'react';
 import {Switch, Route, Redirect} from 'react-router-dom';
-import {rootMainPath, rootAuthPath, mainPath} from './paths';
+import {rootMainPath, mainPath} from './paths';
 import Examples from '../features/Examples';
 import Dashboard from '../features/Dashboard';
 import NotFound from '../shared/NotFound';
 
 const MainRoutes = () => {
-  if (!localStorage.token) return <Redirect to={rootAuthPath} />;
 
   return (
     <Switch>

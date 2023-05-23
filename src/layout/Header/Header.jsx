@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link, NavLink, useHistory} from 'react-router-dom';
-import {authPath, mainPath} from '../../routes/paths';
+import {mainPath} from '../../routes/paths';
 import logoImg from '../../assets/images/logo.svg';
 import {ReactComponent as PlusIcon} from '../../assets/icons/plus.svg';
 import {ReactComponent as FolderIcon} from '../../assets/icons/folder.svg';
