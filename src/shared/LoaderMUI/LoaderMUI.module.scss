@@ -1,0 +1,44 @@
+// Circular loader
+.backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  z-index: 10;
+
+  &.bg {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.circular {
+  margin: auto;
+
+  &.colorPrimary {
+    color: var(--primary);
+  }
+
+  &.colorSecondary {
+    color: var(--secondary);
+  }
+}
+
+// Linear loader
+.linear {
+  height: 2px;
+
+  &.colorPrimary {
+    background-color: var(--primary-light);
+  }
+
+  &.colorSecondary {
+    background-color: var(--secondary-light);
+  }
+
+  &.barColorPrimary {
+    background-color: var(--primary);
+  }
+
+  &.barColorSecondary {
+    background-color: var(--secondary);
+  }
+}

@@ -1,0 +1,161 @@
+@import 'src/assets/styles/mixins';
+
+.root {
+  --color-disabled: rgba(0, 0, 0, 0.2);
+  padding: 6px 16px;
+  min-width: 148px;
+  height: 48px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: normal;
+  border-radius: 4px;
+
+  &:global(.MuiButton) {
+    &-contained {
+      color: var(--white);
+      background-color: var(--primary);
+      @include colorHover($bg-color: var(--primary-dark));
+
+      &Primary {
+      }
+
+      &Secondary {
+        background-color: var(--secondary);
+        @include colorHover($bg-color: var(--secondary-dark));
+      }
+
+      &Info {
+        background-color: var(--info);
+        @include colorHover($bg-color: var(--info-dark));
+      }
+
+      &Success {
+        background-color: var(--success);
+        @include colorHover($bg-color: var(--success-dark));
+      }
+
+      &Error {
+        background-color: var(--error);
+        @include colorHover($bg-color: var(--error-dark));
+      }
+
+      &Warning {
+        background-color: var(--warning);
+        @include colorHover($bg-color: var(--warning-dark));
+      }
+
+      &:disabled,
+      &[aria-disabled='true'] {
+        color: var(--white);
+        background-color: var(--color-disabled);
+      }
+    }
+
+    &-outlined {
+      color: var(--primary);
+      border-color: currentColor;
+      @include colorHover($bg-color: var(--primary-light));
+
+      &Primary {
+      }
+
+      &Secondary {
+        color: var(--secondary);
+        @include colorHover($bg-color: var(--secondary-light));
+      }
+
+      &Info {
+        color: var(--info);
+        @include colorHover($bg-color: var(--info-light));
+      }
+
+      &Success {
+        color: var(--success);
+        @include colorHover($bg-color: var(--success-light));
+      }
+
+      &Error {
+        color: var(--error);
+        @include colorHover($bg-color: var(--error-light));
+      }
+
+      &Warning {
+        color: var(--warning);
+        @include colorHover($bg-color: var(--warning-light));
+      }
+
+      &:disabled,
+      &[aria-disabled='true'] {
+        color: var(--color-disabled);
+        border-color: var(--color-disabled);
+      }
+    }
+
+    &-text {
+      color: var(--primary);
+      @include colorHover($bg-color: var(--primary-light));
+
+      &Primary {
+      }
+
+      &Secondary {
+        color: var(--secondary);
+        @include colorHover($bg-color: var(--secondary-light));
+      }
+
+      &Info {
+        color: var(--info);
+        @include colorHover($bg-color: var(--info-light));
+      }
+
+      &Success {
+        color: var(--success);
+        @include colorHover($bg-color: var(--success-light));
+      }
+
+      &Error {
+        color: var(--error);
+        @include colorHover($bg-color: var(--error-light));
+      }
+
+      &Warning {
+        color: var(--warning);
+        @include colorHover($bg-color: var(--warning-light));
+      }
+
+      &:disabled,
+      &[aria-disabled='true'] {
+        color: var(--color-disabled);
+      }
+    }
+
+    &-sizeSmall {
+      min-width: 105px;
+      height: 35px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    &-sizeLarge {
+      min-width: 168px;
+      height: 56px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+
+  :global {
+    .MuiButton {
+      &-startIcon,
+      &-endIcon {
+        svg {
+          width: 20px;
+          height: 20px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

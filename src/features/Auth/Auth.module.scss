@@ -1,0 +1,59 @@
+.root {
+  margin: auto;
+  padding: 24px;
+  width: 100%;
+  max-width: 530px;
+
+  .title {
+    margin-bottom: 16px;
+  }
+
+  .desc {
+    margin-bottom: 72px;
+  }
+
+  .input {
+    margin-bottom: 48px;
+  }
+
+  .resPassWrap {
+    position: relative;
+  }
+
+  .resPassLink {
+    position: absolute;
+    top: -18px;
+    right: 0;
+    font-size: 10px;
+    line-height: 13px;
+    font-weight: 600;
+  }
+
+  .roundedWrap {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    text-align: center;
+    background: var(--light);
+    border-radius: 8px;
+  }
+
+  .btn {
+    display: flex;
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    margin-top: 104px;
+    text-align: center;
+  }
+
+  .footerText {
+    margin-right: 16px;
+  }
+
+  .link {
+    font-weight: 700;
+  }
+}

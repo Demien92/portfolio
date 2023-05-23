@@ -1,0 +1,98 @@
+.root {
+  --bg-color-hover: rgba(0, 0, 0, 0.15);
+  --border-radius: 4px;
+}
+
+.item {
+  color: var(--white);
+  background-color: var(--primary);
+  box-shadow: none;
+
+  &.colorPrimary {
+    background-color: var(--primary);
+  }
+
+  &.colorSecondary {
+    background-color: var(--secondary);
+  }
+
+  &.colorInfo {
+    background-color: var(--info);
+  }
+
+  &.colorSuccess {
+    background-color: var(--success);
+  }
+
+  &.colorError {
+    background-color: var(--error);
+  }
+
+  &.colorWarning {
+    background-color: var(--warning);
+  }
+
+  &.rounded {
+    &:first-child {
+      border-top-left-radius: var(--border-radius);
+      border-top-right-radius: var(--border-radius);
+    }
+
+    &:last-child {
+      border-bottom-left-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+    }
+  }
+
+  &.expanded {
+    &.gutters {
+      margin-top: 8px;
+      margin-bottom: 8px;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.disabled {
+  }
+}
+
+.summary {
+  @media (hover) {
+    &:hover {
+      background-color: var(--bg-color-hover);
+    }
+  }
+
+  &.focusVisible {
+    background-color: var(--bg-color-hover);
+  }
+
+  &.expanded {
+    min-height: 56px;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+
+  .content {
+    &.expanded {
+      margin: 12px 0;
+    }
+  }
+
+  .expandIconWrapper {
+    color: inherit;
+  }
+}
+
+.details {
+  display: block;
+}

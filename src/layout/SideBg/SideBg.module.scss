@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  padding: 32px;
+  width: 35%;
+  background: var(--info) url('../../assets/images/auth-bg.jpg') center bottom / cover no-repeat;
+
+  .logo {
+    max-width: 110px;
+  }
+}

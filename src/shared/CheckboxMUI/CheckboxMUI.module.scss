@@ -1,0 +1,42 @@
+.root {
+  padding: 0;
+  color: var(--info);
+
+  &.padding {
+    padding: 8px;
+  }
+
+  &.checked {
+  }
+
+  &.indeterminate {
+  }
+
+  &.colorPrimary {
+    color: var(--primary);
+  }
+
+  &.colorSecondary {
+    color: var(--secondary);
+  }
+
+  &.colorInfo {
+    color: var(--info);
+  }
+
+  &.colorSuccess {
+    color: var(--success);
+  }
+
+  &.colorError {
+    color: var(--error);
+  }
+
+  &.colorWarning {
+    color: var(--warning);
+  }
+
+  &.disabled {
+    color: rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,0 +1,117 @@
+.root {
+  display: inline-flex;
+
+  :global {
+    .MuiIconButton-root {
+      margin-right: 0;
+      color: var(--gray);
+    }
+  }
+}
+
+:global {
+  // Calendar
+  .MuiPickersPopper-root,
+  .MuiPickersDialog-root {
+    .MuiPickersPopper-paper {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+
+    .MuiButtonBase-root,
+    .MuiTypography-root {
+      font-family: inherit;
+      letter-spacing: normal;
+    }
+
+    .MuiPickersToolbar-root {
+      color: var(--white);
+      background-color: var(--info);
+
+      .MuiTypography-root {
+        color: var(--white);
+      }
+
+      .MuiDatePickerToolbar-title {
+        color: var(--white);
+      }
+    }
+
+    .MuiCalendarPicker-root {
+      background-color: var(--white);
+    }
+
+    .MuiPickersCalendarHeader-labelContainer {
+      font-family: inherit;
+      font-weight: 400;
+      color: var(--dark);
+    }
+
+    .MuiPickersCalendarHeader-switchViewButton {
+      color: var(--dark);
+    }
+
+    .MuiPickersArrowSwitcher-button {
+      color: var(--dark);
+
+      &.Mui-disabled {
+        color: var(--gray);
+      }
+    }
+
+    .MuiDayPicker-weekDayLabel {
+      font-weight: 500;
+      color: var(--gray);
+    }
+
+    .MuiPickersDay-root {
+      color: var(--dark);
+
+      &.Mui-selected {
+        color: var(--white);
+        background-color: var(--info);
+      }
+
+      &.Mui-disabled {
+        color: var(--gray);
+      }
+    }
+
+    .MuiPickersDay-dayOutsideMonth {
+      color: var(--gray);
+    }
+
+    &.MuiPickersDay-today:not(.Mui-selected) {
+      border: 1px solid var(--dark);
+    }
+
+    .PrivatePickersYear-yearButton {
+      font-family: inherit;
+      letter-spacing: normal;
+
+      &.Mui-selected {
+        background-color: var(--info);
+      }
+
+      &.Mui-disabled {
+        color: var(--gray);
+      }
+    }
+
+    .PrivatePickersMonth-root {
+      &.Mui-selected {
+        background-color: var(--info);
+      }
+
+      &.Mui-disabled {
+        color: var(--gray);
+      }
+    }
+
+    .MuiDialogActions-root {
+      .MuiButtonBase-root {
+        color: var(--info);
+      }
+    }
+  }
+}

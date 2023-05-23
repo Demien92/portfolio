@@ -1,0 +1,52 @@
+@import 'src/assets/styles/mixins';
+
+.root {
+  padding: 0;
+  color: var(--info);
+
+  &.padding {
+    padding: 8px;
+  }
+
+  &.checked {
+  }
+
+  &.small :global(.MuiSvgIcon-root) {
+    width: 20px;
+    height: 20px;
+  }
+
+  &.colorPrimary {
+    color: var(--primary);
+    @include colorHover(var(--primary-dark), var(--primary-light));
+  }
+
+  &.colorSecondary {
+    color: var(--secondary);
+    @include colorHover(var(--secondary-dark), var(--secondary-light));
+  }
+
+  &.colorInfo {
+    color: var(--info);
+    @include colorHover(var(--info-dark), var(--info-light));
+  }
+
+  &.colorSuccess {
+    color: var(--success);
+    @include colorHover(var(--success-dark), var(--success-light));
+  }
+
+  &.colorError {
+    color: var(--error);
+    @include colorHover(var(--error-dark), var(--error-light));
+  }
+
+  &.colorWarning {
+    color: var(--warning);
+    @include colorHover(var(--warning-dark), var(--warning-light));
+  }
+
+  &.disabled {
+    color: rgba(0, 0, 0, 0.2);
+  }
+}

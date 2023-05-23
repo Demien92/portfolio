@@ -1,0 +1,95 @@
+.root {
+  --switch-color: var(--primary);
+  --track-color: var(--gray);
+  padding: 8px;
+}
+
+.edgeStart {
+  margin-left: -8px;
+}
+
+.edgeEnd {
+  margin-right: -8px;
+}
+
+.switchBase {
+  color: var(--switch-color);
+
+  &.checked {
+    color: var(--switch-color);
+
+    & + .track {
+      background-color: var(--switch-color);
+      opacity: 0.5;
+    }
+
+    &.disabled {
+      color: var(--gray);
+    }
+  }
+
+  &.disabled {
+    color: var(--gray);
+
+    & + .track {
+      opacity: 0.3;
+    }
+  }
+}
+
+.colorPrimary,
+.colorPrimary + .track {
+  --switch-color: var(--primary);
+}
+
+.colorSecondary,
+.colorSecondary + .track {
+  --switch-color: var(--secondary);
+}
+
+.colorInfo,
+.colorInfo + .track {
+  --switch-color: var(--info);
+}
+
+.colorSuccess,
+.colorSuccess + .track {
+  --switch-color: var(--success);
+}
+
+.colorError,
+.colorError + .track {
+  --switch-color: var(--error);
+}
+
+.colorWarning,
+.colorWarning + .track {
+  --switch-color: var(--warning);
+}
+
+.sizeSmall {
+  padding: 3px;
+
+  &.edgeStart {
+    margin-left: -3px;
+  }
+
+  &.edgeEnd {
+    margin-right: -3px;
+  }
+}
+
+.input {
+  opacity: 0;
+}
+
+.thumb {
+  background-color: currentColor;
+  box-shadow: none;
+}
+
+.track {
+  background-color: var(--track-color);
+  border-radius: 16px;
+  opacity: 0.5;
+}

@@ -1,0 +1,68 @@
+.root {
+  position: relative;
+  display: inline-flex;
+  max-width: 280px;
+  width: 100%;
+}
+
+.withLabel {
+  .placeholder {
+    visibility: hidden;
+  }
+
+  :global(.MuiInputLabel-shrink + .MuiInputBase-root) {
+    :local(.placeholder) {
+      visibility: visible;
+    }
+  }
+}
+
+.placeholder {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.icon {
+  box-sizing: content-box;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  padding-left: 8px;
+  padding-right: 8px;
+  color: var(--primary);
+  stroke: currentColor;
+  transition: transform var(--transition-duration);
+
+  &:global(.MuiSelect-iconOpen) {
+    transform: translateY(-50%) scaleY(-1);
+  }
+
+  &:global(.Mui-disabled) {
+    color: var(--gray);
+  }
+}
+
+.menu {
+  margin-left: 1px;
+  margin-top: 4px;
+  max-height: 300px;
+
+  &Divider {
+    height: 1px;
+    border-bottom: 1px dashed var(--gray);
+  }
+}
+
+.option {
+  font-family: inherit;
+
+  &Checkbox {
+    margin-right: 8px;
+  }
+
+  &Text {
+    font-family: var(--font);
+    font-size: 14px;
+    color: var(--primary);
+  }
+}
