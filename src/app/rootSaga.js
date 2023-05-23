@@ -1,5 +1,4 @@
 import {put, takeEvery, all} from 'redux-saga/effects';
-import {handleAuthSnacks, handleAuthLoaders} from '../features/Auth/authSaga';
 
 export default function* rootSaga() {
   yield all([handleAuthLoaders(), handleSnack(), handleAuthSnacks()]);
