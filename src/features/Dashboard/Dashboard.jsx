@@ -9,6 +9,7 @@ const Dashboard = () => {
     if (dashboardData?.length > 0) setData(dashboardData);
   }, [dashboardData]);
 
+
   return (
     <main className={`${styles.root} page-wrap`}>
       <div className={`${styles.container} container`}>

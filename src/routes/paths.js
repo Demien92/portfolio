@@ -23,12 +23,13 @@ import {
   TransitionedBlockExample
 } from '../features/Examples';
 
-export const rootMainPath = '/main';
+export const rootMainPath = '/';
 
 export const mainPath = {
-  dashboard: {path: `${rootMainPath}/dashboard`, name: 'Dashboard'},
-  examples: {path: `${rootMainPath}/examples`, name: 'Examples'},
-  navLink: {path: `${rootMainPath}/nav-link`, name: 'Nav link'}
+  examples: {path: `${rootMainPath}examples`, name: 'Examples'},
+  dashboard: {path: `${rootMainPath}dashboard`, name: 'Dashboard'},
+  portfolio: {path: `${rootMainPath}portfolio`, name: 'portfolio'},
+  navLink: {path: `${rootMainPath}nav-link`, name: 'navLink'},
 };
 
 export const examplesPath = {

@@ -4,6 +4,7 @@ import {rootMainPath, mainPath} from './paths';
 import Examples from '../features/Examples';
 import Dashboard from '../features/Dashboard';
 import NotFound from '../shared/NotFound';
+import Portfolio from "../features/Portfolio";
 
 const MainRoutes = () => {
 
@@ -12,6 +13,7 @@ const MainRoutes = () => {
       <Redirect from={rootMainPath} exact to={mainPath.dashboard.path} />
       <Route path={mainPath.dashboard.path} component={Dashboard} />
       <Route path={mainPath.examples.path} component={Examples} />
+      <Route path={mainPath.portfolio.path} component={Portfolio} />
       <Route path='*' component={NotFound} />
     </Switch>
   );
