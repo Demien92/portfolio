@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "author": "Yaroslav Fedchenko <fedcenkoa948@gmail.com>",
-  "homepage": "https://Demien92.github.io",
+  "homepage": "https://Demien92.github.io/portfolio/",
   "dependencies": {
     "@date-io/dayjs": "^2.16.0",
     "@emotion/react": "^11.10.6",
