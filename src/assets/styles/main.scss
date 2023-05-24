@@ -12,8 +12,14 @@ body {
   line-height: 1.5;
   font-weight: 500;
   color: var(--primary);
-  background-color: var(--light);
-  @include scrollbar(15px, var(--primary), var(--light), 5px, 2px);
+  background: url("../../assets/images/bgPortfolio.png");
+  background-color: #040029;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  @include scrollbar(15px, var(--primary), var(--transperent), 5px, 2px);
+
 }
 
 a {

@@ -10,7 +10,7 @@ const MainRoutes = () => {
 
   return (
     <Switch>
-      <Redirect from={rootMainPath} exact to={mainPath.dashboard.path} />
+      <Redirect from={rootMainPath} exact to={mainPath.portfolio.path} />
       <Route path={mainPath.dashboard.path} component={Dashboard} />
       <Route path={mainPath.examples.path} component={Examples} />
       <Route path={mainPath.portfolio.path} component={Portfolio} />

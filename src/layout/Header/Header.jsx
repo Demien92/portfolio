@@ -10,6 +10,11 @@ import styles from './Header.module.scss';
 
 const navLinks = [
   {
+    path: mainPath.portfolio.path,
+    name: mainPath.portfolio.name,
+    icon: <PlusIcon className={styles.icon} />
+  },
+  {
     path: mainPath.dashboard.path,
     name: mainPath.dashboard.name,
     icon: <PlusIcon className={styles.icon} />
@@ -32,7 +37,7 @@ const Header = () => {
 
   const logout = () => {
     localStorage.removeItem('token');
-    history.push(authPath.signIn.path);
+    // history.push(authPath.signIn.path);
   };
 
   return (
