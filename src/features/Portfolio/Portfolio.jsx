@@ -15,17 +15,12 @@ const Portfolio = () => {
         <main className={`${styles.portfolio} `}>
             <div className={`${styles.container} container`}>
 
-                <div className="mainTitle lightTitle">
-                    <span className="sectionTitle">Створюємо максимально корисні <br/> IT продукти</span>
-                    <h1 className="sectionSubTitle">Портфоліо <span className="shadowText">Портфоліо</span></h1>
-                </div>
-                <div className={`${styles.portfolio__title}`}>Portfolio</div>
-
-
+                {/*<div className="mainTitle lightTitle">*/}
+                {/*    <span className="sectionTitle">Створюємо максимально корисні <br/> IT продукти</span>*/}
+                {/*    <h1 className="sectionSubTitle">Портфоліо <span className="shadowText">Портфоліо</span></h1>*/}
+                {/*</div>*/}
+                {/*<div className={`${styles.portfolio__title}`}>Portfolio</div>*/}
                 <Case/>
-
-
-
             </div>
         </main>
     );

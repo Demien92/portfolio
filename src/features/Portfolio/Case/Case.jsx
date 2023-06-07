@@ -142,12 +142,12 @@ const Case = () => {
             project_link: 'https://client.globixcash.4-com.pro',
             header_title:'Crypt2p',
         },
-        {
-            case_image:'owlab',
-            case_mobile_image:'owlab',
-            project_link: 'owlab',
-            header_title:'owlab',
-        },
+        // {
+        //     case_image:'owlab',
+        //     case_mobile_image:'owlab',
+        //     project_link: 'owlab',
+        //     header_title:'owlab',
+        // },
     ]
 
     return (

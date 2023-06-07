@@ -6,9 +6,9 @@ import MainRoutes from '../../routes/MainRoutes';
 const MainContainer = () => {
   return (
     <>
-      <Header />
+      {/*<Header />*/}
       <MainRoutes />
-      <Footer />
+      {/*<Footer />*/}
     </>
   );
 };
